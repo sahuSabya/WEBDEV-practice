@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-item {
+    background-color: lightgreen;
+    height: 100px;
+    width: 75%;
+    border: solid 2px darkgreen;
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+
+@media (min-width:576px) {
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .flex-item {
+        background-color: lightgreen;
+        height: 100px;
+        width: 35%;
+        margin: 5px;
+        border: solid 2px darkgreen;
+        color: red;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        margin-left: 5%;
+    }
+
+    .flex-item {
+        background-color: lightgreen;
+        height: 100px;
+        width: 30%;
+        margin: 5px;
+        border: solid 2px darkgreen;
+        color: red;
+        font-size: 25px;
+        text-align: center;
+    }
+}
